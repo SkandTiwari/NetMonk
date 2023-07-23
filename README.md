@@ -7,7 +7,8 @@ Current, I am using Catalyst DNAC Alway-on-sandbox:
 
 
 following are actual screenshots:
-![cmmdrun2](https://github.com/SkandTiwari/NetMonk/assets/65547970/5579b31f-ce41-442f-8e36-3ac2a67eb215)
+![cmmdrun2](https://github.com/SkandTiwari/NetMonk/assets/65547970/736da71a-7c67-4cde-9c81-c03a539f533c)
+
 Command runner output console
 
 ![commdrun1](https://github.com/SkandTiwari/NetMonk/assets/65547970/2d4b324a-20b9-4a77-9c67-3fa81723c0a0)

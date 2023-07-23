@@ -104,6 +104,15 @@
             text-align: center;
 }
 
+.card-topology {
+    background-color: #f3f3f3;
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
     </style>
 </head>
 <body>
@@ -111,7 +120,7 @@
         <div class="sidebar">
             <h2 class="card-heading">NetMonk</h2>
             <div class="user-profile">
-                <img src="D:\DevNetWorkshop\templates\avatar.png" alt="User Avatar">
+                <img src="/static/avatar.png" alt="User Avatar">
                 <h3>{{ uname }}</h3>
             </div>
             <ul class="nav-links">
@@ -146,7 +155,8 @@
                     <h3>Hours</h3>
                 </div>
             </div>
-
+            <div class="card-topology">
+                <img src="/static/topology.JPG" alt="topology">
         </div>
             
     </div>

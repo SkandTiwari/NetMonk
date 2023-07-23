@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #b3e6cc;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #99d6ad;
+}
+
+.content {
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background-color: #f3f3f3;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.card-heading {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #8CC63F; /* Light green color */
+            margin-bottom: 20px;
+            text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2 class="card-heading">NetMonk</h2>
+            <div class="user-profile">
+                <img src="D:\DevNetWorkshop\templates\avatar.png" alt="User Avatar">
+                <h3>{{ uname }}</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5000/devices">Devices</a></li>
+                <li><a href="http://127.0.0.1:5000/interfaces">Interfaces</a></li>
+                <li><a href="http://127.0.0.1:5000//command_runner">Command Runner</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 class="content-header">User dashboard</h2>
+            <br>
+            <h4>Following data shows overview of your enterprise's network</h4>
+            <div class = "card-container">
+                <div class="card">
+                    <h2>Total up and running</h2>
+                    <h1>{{dcount}}</h1>
+                    <h3>Devices</h3>
+                </div>
+                <div class="card">
+                    <h2>Average uptime</h2>
+                    <h1>{{avgup}}</h1>
+                    <h3>Hours</h3>
+                </div>
+                <div class="card">
+                    <h2>OS Available</h2>
+                    <h1>{{tos}}</h1>
+                    <h3>Categories</h3>
+                </div>
+                <div class="card">
+                    <h2>Max last update time</h2>
+                    <h1>{{tupdt}}</h1>
+                    <h3>Hours</h3>
+                </div>
+            </div>
+
+        </div>
+            
+    </div>
+</body>
+</html>

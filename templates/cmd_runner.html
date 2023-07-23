@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #b3e6cc;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #99d6ad;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.card {
+    background-color: #f3f3f3;
+    width: 300%;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-group {
+            margin-bottom: 25px;
+        }
+
+.form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #b3e6cc;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+
+.form-group button {
+            width: 45%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+
+
+
+.card-heading {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #8CC63F; /* Light green color */
+            margin-bottom: 20px;
+            text-align: center;
+}
+
+input#command {
+    background-color: #333;
+}
+
+input#command {
+    color: orange;
+}
+input#command {
+    height: 80px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2 class="card-heading">NetMonk</h2>
+            <div class="user-profile">
+                <img src="avatar.png" alt="User Avatar" href = "avatar.png">
+                <h3>{{ name }}</h3>
+            </div>
+            <ul class="nav-links">
+                <!--<li><a href="dashboard.html">Dashboard</a></li>-->
+                <li><a href="http://127.0.0.1:5000/devices">Devices</a></li>
+                <li><a href="http://127.0.0.1:5000/interfaces">Interfaces</a></li>
+            </ul>
+        </div>
+        <div class="content">
+                
+            <div class="card">
+                <h3 style="color: blue;">Command runner</h3>
+                <form action="http://127.0.0.1:5000/cmd_console" method="post">
+                    <div class="form-group">
+                        <!--<input for="name" type="text" id="name" name="name" placeholder="Command name">-->
+                        <select name="name" id="name" class="form-group">
+                            <optgroup label="Supported Commands">
+                                <option value="show">Show</option>
+                                <option value="crypto">Crypto</option>
+                                <option value="call-home">call-home</option>
+                                <option value="cd">cd</option>
+                                <option value="cping">cping</option>
+                                <option value="dir">dir</option>
+                                <option value="eping">eping</option>
+                                <option value="mediatrace">mediatrace</option>
+                                <option value="monitor">monitor</option>
+                                <option value="traceroute">traceroute</option>
+                                <option value="start-chat">start-chat</option>
+                                <option value="verify">verify</option>
+                                <option value="where">where</option>
+                                <option value="which-route">which-route</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="command" name="command" placeholder="command" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="uuid" name="uuid" placeholder="UUID" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

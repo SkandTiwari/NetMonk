@@ -4,12 +4,14 @@ to run this, you need to make an account on DevNet Sandbox and Follow the DNAC b
 Currently, I am using Cisco DNAC Alway-on-sandbox. this project is purly for learning understanding SDN and REST APIs.
 
 # Topology
-I am using a simple topology consisting of four catalyst switches. these switches are managed by a centralised SDN controller (DNAC). Following screenshot shows the same.
+I am using a simple topology consisting of four catalyst switches. These switches are managed by a centralised SDN controller (DNAC). Following screenshot shows the same.
+
 ![topology](https://github.com/SkandTiwari/NetMonk/assets/65547970/345efa82-75ad-4416-933f-3b3ae5334916)
 
 
 # Portal's Screenshots
 Followings are the portal's actual screenshots
+
 ![cmmdrun2](https://github.com/SkandTiwari/NetMonk/assets/65547970/736da71a-7c67-4cde-9c81-c03a539f533c)
 Command runner output console
 

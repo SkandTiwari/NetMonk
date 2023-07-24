@@ -1,7 +1,7 @@
 # NetMonk
 NetMonk is an implementation of Software Defined Networking (SDN), it uses Northbound APIs to provide realtime monitoring and analysis of devices for Enterprise networks. it leverages Cisco's Digital Network Architecture (DNA) Center's APIs available in DevNet Sandbox.
 to run this, you need to make an account on DevNet Sandbox and Follow the DNAC beginner course to understand things in a better way.
-Currently, I am using Cisco DNAC Alway-on-sandbox. this project is purly for learning understanding SDN and REST APIs.
+Currently, I am using Cisco DNAC Alway-on-sandbox. The objective of this project is to learn and understand SDN and REST APIs.
 
 # Topology
 I am using a simple topology consisting of four catalyst C9K switches. These switches are managed by a centralised SDN controller (DNAC). Following screenshot shows the same.

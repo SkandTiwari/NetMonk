@@ -6,9 +6,8 @@ Current, I am using Catalyst DNAC Alway-on-sandbox:
 ![topology](https://github.com/SkandTiwari/NetMonk/assets/65547970/345efa82-75ad-4416-933f-3b3ae5334916)
 
 
-following are actual screenshots:
+following are the actual portal screenshots:
 ![cmmdrun2](https://github.com/SkandTiwari/NetMonk/assets/65547970/736da71a-7c67-4cde-9c81-c03a539f533c)
-
 Command runner output console
 
 ![commdrun1](https://github.com/SkandTiwari/NetMonk/assets/65547970/2d4b324a-20b9-4a77-9c67-3fa81723c0a0)
